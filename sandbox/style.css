@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  border: solid 2px #686363;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 12px 25px;
+  color: #2D2D2D;
+}
+
+th{
+    background-color: #f0f0f0;
+}
+
+.inputArea {
+    width: 100px;
+}
+
+.submitButton{
+    color: rgb(89, 251, 89);
+}
