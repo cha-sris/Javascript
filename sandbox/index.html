@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Website</title>
+  </head>
+  <body>
+    <h2 id="myh2"></h2>
+    <p id="myp"></p>
+
+    <table border="1">
+      <tr>
+        <th>Name:</th>
+        <td id="pName"></td>
+      </tr>
+      <tr>
+        <th>Age:</th>
+        <td id="pAge"></td>
+      </tr>
+      <tr>
+        <th>Online:</th>
+        <td id="status"></td>
+      </tr>
+      <tr>
+        <th>User Input:</th>
+        <td>
+          <input type="text" id="userInputTxt" class="inputArea" />
+          <input
+            type="button"
+            id="submitButton1"
+            class="submitButton"
+            value="✔️"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>Area of Circle:</th>
+        <td>
+          <input type="number" id="areaInput" class="inputArea" />
+          <input
+            type="button"
+            id="submitButton2"
+            value="✔️"
+            class="submitButton"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <p id="students"></p>
+    <p id="opd"></p>
+
+    <!-- User Input -->
+    <p id="userTxt"></p>
+
+    <!-- Type conversion -->
+    <p id="typeConversion1"></p>
+    <p id="typeConversion2"></p>
+    <p id="typeConversion3"></p>
+
+    <!-- contants -->
+    <p id="circleArea"></p>
+
+    <!-- Checked Property -->
+    <form action="">
+      <input type="checkbox" id="subscribe">
+      <label for="subscribe">Subscribe</label>
+      <br>
+
+      <input type="radio" id="visa-card" name="cards" />
+      <label for="visa-card">Visa</label>
+
+      <input type="radio" id="master-card" name="cards" />
+      <label for="master-card" >Mastercard</label>
+
+      <input type="radio" id="american-card" name="cards"/>
+      <label for="american-card">American Expresss</label><br>
+      <input type="button"  id="btn-submit" value="Submit">
+    </form>
+
+    <p id="sub-choice"></p>
+    <p id="card-choice"></p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
