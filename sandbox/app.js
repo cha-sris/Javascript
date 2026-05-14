@@ -169,7 +169,7 @@ submit.onclick = function () {
 
 // used as a shortcut to if-else statements
 //  condition ? codeIfTure : codeIfFalse
-
+let age4;
 let message4 = age4 >= 18 ? "You are an adult" : "You are a minor";
 // console.log(message);
 
@@ -249,4 +249,90 @@ let lastName = fullName.slice(0, 1);
 let firstName = fullName.slice(3);  //  from index 3 to end
 
 fullName.slice(-1)  //  starts from last index on move toward first index
-lastName = fullName.slice(0, indexOf(" "));
+lastName = fullName.slice(0,fullName. indexOf(" "));
+
+// ----------------------------------------STRICT EQUALITY---------------------------------------
+
+//  = assignment operator
+//  == comparison operator (compare if values are equal)
+//  === strict equality operator (compares if values and datatypes are equal)
+//  !=  inequality operator
+//  !== strict inequality operator
+
+// ----------------------------------------FOR LOOP---------------------------------------
+
+for(let i = 0; i <= 10; i++){
+  //  codes
+}
+let fruits = ["apple", "orange", "banana", "coconut"];
+
+for(let fruit of fruits){
+  //  codes
+}
+
+// ----------------------------------------RANDOM NUMBER---------------------------------------
+let minNum = 1;
+let maxNum = 100;
+let rand = Math.floor(Math.random() * (maxNum - minNum + 1) + minNum);
+//  Math.floor rounds up the number to nearest low
+//  Math.random() always returns a numer between 0 and 1 (exclusive)
+
+// ❌ This does NOT work
+// Math.random(10);      // Still returns 0 to 0.999 (ignores the argument!)
+// Math.random(100);     // Still 0 to 0.999
+// Math.random(1, 100);  // Still 0 to 0.999
+
+// ✅ Math.random() takes NO parameters
+// Math.random();  // Only correct way
+
+// ----------------------------------------FUNCTION---------------------------------------
+
+function add(x, y){ //  the order of the parameter
+  let result = x + y;
+  return result;
+}
+
+function subtract(x, y){
+  return x - y;
+}
+
+add(5, 7);  //  and the order of the arguments matter
+subtract(9, 5);
+
+
+let num5 = 3.14159;
+
+let num6 = num5.toFixed(2);
+
+console.log(num6);
+
+// ----------------------------------------ARRAY---------------------------------------
+
+// JavaScript - arrays can mix ANY types
+let mixed = [1, "hello", true, {name: "Spongebob"}, [1, 2, 3]];
+console.log(mixed);  // ✅ Perfectly valid!
+console.log(mixed[2]);  //  true
+console.log(typeof mixed[3]); //  object
+
+mixed[3];  // {name: "Spongebob"} (object type)
+typeof mixed[3];  // "object"
+
+// Access object properties
+mixed[3].name;  // "Spongebob"
+mixed[3]["name"];  // "Spongebob"
+
+// Modify object
+mixed[3].age = 23;  // Add new property
+console.log(mixed[3]);  // {name: "Spongebob", age: 23}
+
+mixed[4];  // [1, 2, 3] (array type)
+typeof mixed[4];  // "object" (arrays are objects in JS)
+
+// Access nested array elements
+mixed[4][0];  // 1
+mixed[4][1];  // 2
+mixed[4][2];  // 3
+
+// Modify nested array
+mixed[4].push(4);  // [1, 2, 3, 4]
+mixed[4][0] = 10;  // [10, 2, 3, 4]
