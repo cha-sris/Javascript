@@ -36,3 +36,22 @@ function formatDates(element) {
   return `${parts[1]}/${parts[2]}/${parts[0]}`;
 }
 
+//  .filter() = create a new array by filtering out arrays
+
+let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenNums = numbersArray.filter(isEven);
+let oddNums = numbersArray.filter(isOdd);
+
+console.log(evenNums);
+console.log(oddNums);
+
+function isEven(element) {
+  return element % 2 === 0;
+}
+
+function isOdd(element) {
+  return element % 2 !== 0;
+}
+
+
