@@ -49,6 +49,30 @@
         background-color: rgb(80, 223, 223);
         color: ghostwhite;
       }
+
+      /* for class list */
+      #myBtn {
+        font-size: 4rem;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+      }
+
+      .enabled {
+        background-color: blueviolet;
+        color: white;
+      }
+
+      .hover {
+        background-color: rgb(156, 85, 223);
+        font-weight: bold;
+      }
+
+      .disabled {
+        background-color: hsl(0, 0%, 60%);
+        color: hsl(0, 0%, 80%);
+      }
     </style>
   </head>
   <body>
@@ -128,18 +152,24 @@
     <img id="myImg" src="../assets/nanikore.jpeg" alt="nanikore"><br>
     <button id="myButton">Hide</button>
 
+    <!-- classList -->
     <hr>
     <button class="my-btns">Button 1</button>
     <button class="my-btns">Button 2</button>
     <button class="my-btns">Button 3</button>
     <button class="my-btns">Button 4</button>
 
+    <hr>
+    <button id="myBtn">My Button</button>
+
     <!-- <script src="selectors/element-selectors.js"></script> -->
-    <script src="selectors/nodelists.js"></script>
+    <!-- <script src="selectors/nodelists.js"></script> -->
 
     <!-- <script src="manipulation/dom-navigation.js"></script> -->
     <!-- <script src="manipulation/modify-html.js"></script> -->
     <!-- <script src="manipulation/show-hide.js"></script> -->
+    <script src="manipulation/class-list.js"></script>
+
     <!-- <script src="events/mouse-events.js"></script> -->
     <!-- <script src="events/key-events.js"></script> -->
   </body>
