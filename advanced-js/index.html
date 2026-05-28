@@ -4,8 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced JS</title>
+    <style>
+      .time-btn {
+        /* padding: 10px 20px; */
+        padding: 5vw;
+        font-size: 5vw;
+      }
+
+      /* fetch api */
+      #fetchDogbtn {
+        font-size: 3rem;
+        padding: 20px;
+        border: 2px solid rgb(213, 157, 27);
+        border-radius: 15px;
+        background-color: rgb(232, 203, 166);
+        color: rgb(255, 255, 255);
+      }
+
+      #dogImage {
+        max-width: 300px;
+      }
+    </style>
   </head>
   <body>
-    <script src="./functional-programming/callback.js"></script>
+    <!-- Buttons for timeout() function -->
+    <button class="time-btn" onclick="startTimer()">Start</button>
+    <button class="time-btn" onclick="clearTimer()">Clear</button>
+
+    <br /><br />
+    <!-- fetch api -->
+    <div>
+      <img id="dogImage" src="" alt="A random dog will appear here" /><br />
+      <button id="fetchDogbtn">Fetch Dog 🦴</button>
+    </div>
+
+    <!-- Uncomment the using script -->
+
+    <!-- <script src="./functional-programming/callback.js"></script> -->
+    <!-- <script src="./functional-programming/forEach.js"></script> -->
+    <!-- <script src="./functional-programming/map-filter-reduce.js"></script> -->
+    <!-- <script src="./functional-programming/closures.js"></script> -->
+
+    <!-- <script src="./oop/objects-and-this.js"></script> -->
+    <!-- <script src="./oop/constructors.js"></script> -->
+    <!-- <script src="./oop/classes.js"></script> -->
+    <!-- <script src="./oop/static.js"></script> -->
+    <!-- <script src="./oop/inheritance.js"></script> -->
+    <!-- <script src="./oop/super.js"></script> -->
+    <!-- <script src="./oop/getters-setters.js"></script> -->
+    <!-- <script src="./oop/sorting.js"></script> -->
+
+    <!-- <script src="async/timeouts.js"></script> -->
+    <!-- <script src="async/async-intro.js"></script> -->
+    <!-- <script type="module" src="async/modules.js"></script> -->
+    <!-- <script src="async/promises.js"></script> -->
+    <!-- <script src="async/async-await.js"></script> -->
+    <!-- <script src="async/fetch-api.js"></script> -->
   </body>
 </html>
